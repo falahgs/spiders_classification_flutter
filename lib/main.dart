@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Lung Cancer Detection By AI',
+      title: 'Spiders Classification By AI',
       home: Home(),
       debugShowCheckedModeBanner: false,
     );

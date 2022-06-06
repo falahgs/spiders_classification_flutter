@@ -50,7 +50,7 @@ class _HomeState extends State<Home> {
       _loading = false;
       _voiceController.init().then((_) {
         _voiceController.speak(
-          ' the cancer type is ${_output[0]['label']}',
+          ' the spider  type is ${_output[0]['label']}',
           VoiceControllerOptions(delay: 2),
         );
       });
@@ -64,7 +64,7 @@ class _HomeState extends State<Home> {
   loadModel() async {
     //this function loads our model
     await Tflite.loadModel(
-      model: 'assets/model_lung_cancer.tflite',
+      model: 'assets/model_spider.tflite',
       labels: 'assets/labels.txt',
     );
   }
@@ -99,7 +99,7 @@ class _HomeState extends State<Home> {
         backgroundColor: Colors.blueGrey,
         centerTitle: true,
         title: Text(
-          'Lung Cancer Detection By AI',
+          'Spiders Classification By AI ',
           style: TextStyle(
             color: Colors.white,
             fontWeight: FontWeight.w500,
